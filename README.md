@@ -7,6 +7,8 @@ How to Run.
 * Move to folder: cd rsm-nasa-hm
 * Install dependencies npm i
 * Run (make sure any other site is using the same port 4000): npm start
+* Go to localhost:4000
+* Try a coordinate i.e. 13.662285, -89.253418 (RSM offices in El Salvador)
 
 In case other site is using the same port:
 * Run: sudo lsof -i :4000
