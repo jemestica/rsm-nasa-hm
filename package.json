@@ -1,0 +1,30 @@
+{
+  "name": "rsm-nasa-hm",
+  "version": "1.0.0",
+  "description": "RSM Developer application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src",
+    "dev": "nodemon src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jemestica/rsm-nasa-hm.git"
+  },
+  "keywords": [],
+  "author": "Julio Villalta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jemestica/rsm-nasa-hm/issues"
+  },
+  "homepage": "https://github.com/jemestica/rsm-nasa-hm#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
