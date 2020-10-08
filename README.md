@@ -3,9 +3,14 @@ Simple web page application that allows user to look at aerial photography of an
 
 How to Run.
 
-* Clone repository using git clone or gh repo clone
+* Clone repository using: git clone or gh repo clone
+* Move to folder: cd rsm-nasa-hm
 * Install dependencies npm i
-* Run: npm start
+* Run (make sure any other site is using the same port 4000): npm start
+
+In case other site is using the same port:
+* Run: sudo lsof -i :4000
+* Run: kill -9 {PID}
 
 ## NASA – Homework!
 
