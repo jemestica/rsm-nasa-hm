@@ -5,7 +5,7 @@ const fetch = require("node-fetch");
 
 const API_KEY = "ikwmC7O4fi1lVvGBE3mwcJ3jSSbGfZWDf9eHVnXD";
 const url = "https://api.nasa.gov/planetary/earth/assets?";
-const fecha = "2020-10-9";
+const fecha = "2020-9-1";
 const dim = "0.055";
 
 const options = {
@@ -28,6 +28,7 @@ router.post('/tiles', (req, res) => {
     lon = parts[1].replace(',','').trim();
   } 
 //lon=-95.33&lat=29.78&date=2018-01-01&&dim=0.10&api_key="+API_KEY;
+  console.log(url+'lon='+lon+'&lat='+lat+'&date='+fecha+'&dim='+dim+'&api_key='+API_KEY);
   fetch(url+'lon='+lon+'&lat='+lat+'&date='+fecha+'&dim='+dim+'&api_key='+API_KEY, options)
     .then(res => res.json()) // expecting a json response
     .then((data) => {
